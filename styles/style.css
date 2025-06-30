@@ -125,7 +125,7 @@
   max-width: 408px;
   font-size: 18px;
 }
-.container .header-hero-con .hero-block .text button {
+.container .header-hero-con .hero-block .text a {
   font-weight: 700;
   border-radius: 16px;
   max-width: 209px;
@@ -136,7 +136,7 @@
   cursor: pointer;
   transition: ease-out 0.5s;
 }
-.container .header-hero-con .hero-block .text button:hover {
+.container .header-hero-con .hero-block .text a:hover {
   background-color: black;
 }
 .container .about-us-block .text {
