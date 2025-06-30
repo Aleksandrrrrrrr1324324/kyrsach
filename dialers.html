@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/dialers.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="header-con">
+        <header>
+            <div class="content">
+                <div class="logo">
+                    <img src="./assets/_ 1.svg" alt="">
+                </div>
+                <div class="navigation">
+                    <a href="index.html">Главная</a>
+                    <a href="news.html">Новости</a>
+                    <a href="">Диллеры</a>
+                    <a href="assortment.html">Ассортимент</a>
+                    <a href="production.html">Продукция</a>
+                    <a href="company-projects.html">Проекты Компании</a>
+                    <a href="">Контакты</a>
+                    <a href="documents.html">Документы</a>
+                </div>
+                <div class="burger-menu" id="burger">
+                    <img src="./assets/icons8-hamburger-menu 1.svg" alt="">
+                </div>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Главная</a>
+            <a href="news.html">Новости</a>
+            <a href="dialers.html">Диллеры</a>
+            <a href="assortment.html">Ассортимент</a>
+            <a href="production.html">Продукция</a>
+            <a href="company-projects.html">Проекты Компании</a>
+            <a href="">Контакты</a>
+            <a href="documents.html">Документы</a>
+        </div>  
+    </div>
+    <div class="container">
+        <div class="text">
+            <h2>Дилеры</h2>
+            <h2>Выгодные условия для дилеров!</h2>
+            <p>Стать официальным дилером или агентом просто. Мы предоставим необходимые вам маркетинговые инструменты. Получите договор сотрудничества, после заключения которого все последующие заказы будут проходить с дополнительной скидкой.</p>
+        </div>
+        <div class="input-block">
+            <img src="assets/pngwing.com(60) 1.png" alt="" class="lada">
+            <div class="text-inputs">
+                <div class="text">
+                    <h2>Получите дилерское предложение с выгодой до 87%</h2>
+                    <p>Оставьте заявку и в течение 5 минут и получите на свой e-mail выгодное дилерское предложение по продаже выхлопных систем</p>
+                </div>
+                <div class="inputs">
+                    <input type="text" placeholder="Фамилия, имя и отчество*" id="input">
+                    <input type="text" placeholder="Телефон" id="input" pattern="^(\+7|8)?[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
+                    required type="tel" name="phone">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="btn-checkmark">
+                    <button id="btn">Отправить данные</button>
+                    <div class="lol">
+                        <input type="checkbox" id="consent" style="display: none;">
+                        <div class="checkmark" id="checkmark">
+                            <img src="./assets/Vector.svg" alt="" id="mark">
+                        </div>
+                        <p>Согласен на обработку данных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>Ваши данные успешно отправлены</p>
+            <button id="closePopup">Закрыть</button>
+        </div>
+    </div>
+    <footer>
+        <div class="content">
+            <div class="top">
+                <img src="./assets/_ 1.svg" alt="">
+                <p>8 (8482) 75-93-81 <br>manager@robola.ru</p>
+                <div class="navigation">
+                    <a href="index.html">Главная</a>
+                    <a href="news.html">Новости</a>
+                    <a href="">Диллеры</a>
+                    <a href="assortment.html">Ассортимент</a>
+                    <a href="production.html">Продукция</a>
+                    <a href="company-projects.html">Проекты Компании</a>
+                    <a href="">Контакты</a>
+                    <a href="documents.html">Документы</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>445000, Россия, Самарская область, Ставропольский район, с.п. Тимофеевка, село Русская Борковка, ул. Северная 10Е</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/burger.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

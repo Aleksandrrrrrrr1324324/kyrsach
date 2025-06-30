@@ -1,0 +1,716 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 1100;
+}
+.burger span {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #111;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  align-items: center;
+  gap: 30px;
+  z-index: 1000;
+}
+.mobile-menu a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.mobile-menu.active {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 150px;
+  background-color: #212121;
+  align-items: center;
+}
+.container .header-hero-con {
+  width: 100%;
+}
+.container .header-hero-con header {
+  display: flex;
+  justify-content: center;
+}
+.container .header-hero-con header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1280px;
+  padding: 27px 0px 27px 0px;
+}
+.container .header-hero-con header .content .navigation {
+  display: flex;
+  gap: 14px;
+}
+.container .header-hero-con header .content .navigation a {
+  color: #A6A6A6;
+  font-weight: 600;
+  font-size: 16px;
+  transition: ease-out 0.3s;
+}
+.container .header-hero-con header .content .navigation a:hover {
+  color: white;
+}
+.container .header-hero-con header .content .burger-menu {
+  display: none;
+}
+.container .header-hero-con .hero-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  background: url(../assets/left\ part.png);
+  height: 100vh;
+  width: 100%;
+}
+.container .header-hero-con .hero-block .text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 918px;
+  gap: 30px;
+}
+.container .header-hero-con .hero-block .text h1 {
+  font-size: 40px;
+  font-family: "Rubik Mono One";
+  font-weight: 400;
+  color: #C70000;
+}
+.container .header-hero-con .hero-block .text p {
+  color: white;
+  font-weight: 500;
+  max-width: 408px;
+  font-size: 18px;
+}
+.container .header-hero-con .hero-block .text button {
+  font-weight: 700;
+  border-radius: 16px;
+  max-width: 209px;
+  background-color: #C70000;
+  color: white;
+  font-size: 16px;
+  padding: 18px 48px;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+}
+.container .header-hero-con .hero-block .text button:hover {
+  background-color: black;
+}
+.container .about-us-block .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+}
+.container .about-us-block .text h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+.container .about-us-block .text p {
+  text-align: center;
+  max-width: 1071px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+.container .advantages-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.container .advantages-block .top-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+.container .advantages-block .top-text h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+.container .advantages-block .top-text p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #B5B5B5;
+}
+.container .advantages-block .advantages {
+  display: flex;
+  align-items: flex-start;
+  gap: 112px;
+}
+.container .advantages-block .advantages .line {
+  border: 1px solid white;
+  height: 1200px;
+}
+.container .advantages-block .advantages .advantage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+.container .advantages-block .advantages .advantage span {
+  font-weight: 500;
+}
+.container .advantages-block .advantages .advantage img {
+  width: 135px;
+  height: 135px;
+}
+.container .advantages-block .advantages .advantage .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.container .advantages-block .advantages .advantage .text h3 {
+  font-weight: 500;
+  color: #C70000;
+  font-size: 32px;
+}
+.container .advantages-block .advantages .advantage .text p {
+  color: white;
+  max-width: 262px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.container .contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 29px;
+}
+.container .contact .title {
+  display: flex;
+  justify-content: center;
+}
+.container .contact .title h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+.container .contact .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  width: 551px;
+}
+.container .contact .inputs input {
+  padding: 22px 10px;
+  background-color: #3D413C;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+}
+.container .contact .inputs input::-moz-placeholder {
+  color: #B6B6B6;
+  font-size: 16px;
+}
+.container .contact .inputs input::placeholder {
+  color: #B6B6B6;
+  font-size: 16px;
+}
+.container .contact .inputs textarea {
+  padding: 22px 10px;
+  resize: none;
+  background-color: #3D413C;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+}
+.container .contact .inputs textarea::-moz-placeholder {
+  color: #B6B6B6;
+  font-size: 16px;
+}
+.container .contact .inputs textarea::placeholder {
+  color: #B6B6B6;
+  font-size: 16px;
+}
+.container .contact .btn-checkmark {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.container .contact .btn-checkmark button {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  padding: 21px 52px;
+  background-color: #C70000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+}
+.container .contact .btn-checkmark button:hover {
+  background-color: black;
+}
+.container .contact .btn-checkmark .lol {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.container .contact .btn-checkmark .lol .checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #B5B5B5;
+  cursor: pointer;
+}
+.container .contact .btn-checkmark .lol .checkmark img {
+  display: none;
+}
+.container .contact .btn-checkmark .lol p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #B5B5B5;
+}
+.container .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  border-radius: 10px;
+  padding: 20px 30px;
+  z-index: 999;
+}
+.container .popup .popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .popup .popup-content p {
+  margin-bottom: 10px;
+  color: white;
+}
+.container .popup .popup-content button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #C70000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+}
+.container .popup .popup-content button:hover {
+  color: black;
+  background: white;
+}
+.container .our-partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container .our-partners h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+.container .our-partners .photos {
+  display: flex;
+  gap: 118px;
+}
+.container footer {
+  display: flex;
+  justify-content: center;
+  background-color: #C70000;
+  width: 100%;
+}
+.container footer .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}
+.container footer .content .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 392px;
+  max-width: 1280px;
+}
+.container footer .content .top p {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+}
+.container footer .content .top .navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container footer .content .top .navigation a {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  transition: ease-out 0.3s;
+}
+.container footer .content .top .navigation a:hover {
+  color: #A6A6A6;
+}
+.container footer .content .bottom p {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    gap: 100px;
+  }
+  .container .header-hero-con header .content {
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .container .header-hero-con .hero-block {
+    padding: 0 20px;
+  }
+  .container .header-hero-con .hero-block .text h1 {
+    font-size: 32px;
+  }
+  .container .header-hero-con .hero-block .text p {
+    font-size: 16px;
+  }
+  .container .advantages-block .advantages {
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .container .advantages-block .advantages .line {
+    display: none;
+  }
+  .container .contact .inputs {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .container .our-partners .photos {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .container footer .content .top {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .header-hero-con header .content {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center !important;
+  }
+  .header-hero-con header .content .navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header-hero-con header .content .navigation a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .container .header-hero-con header .content {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: none;
+  }
+  .container .header-hero-con header .content .navigation {
+    display: none;
+  }
+  .container .burger-menu {
+    display: block !important;
+    z-index: 1100;
+  }
+  .container .burger-menu img {
+    width: 30px;
+    height: 30px;
+  }
+  .container .hero-block .text h1 {
+    font-size: 24px;
+  }
+  .container .hero-block .text p {
+    font-size: 14px;
+  }
+  .container .hero-block .text button {
+    font-size: 14px;
+    padding: 14px 36px;
+  }
+  .container .about-us-block .text p {
+    font-size: 18px;
+  }
+  .container .advantages-block .top-text h2,
+  .container .about-us-block .text h2,
+  .container .contact .title h2,
+  .container .our-partners h2 {
+    font-size: 28px;
+  }
+  .container .advantages-block .advantages .advantage .text p {
+    font-size: 16px;
+  }
+  .container .contact .btn-checkmark {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container footer .content .top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .container footer .content .top .navigation {
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    gap: 80px;
+  }
+  .container .header-hero-con .hero-block {
+    background-size: cover;
+  }
+  .container .header-hero-con .hero-block .text h1 {
+    font-size: 20px;
+  }
+  .container .header-hero-con .hero-block .text p {
+    font-size: 12px;
+  }
+  .container .about-us-block .text p {
+    font-size: 16px;
+  }
+  .container .advantages-block .advantages .advantage .text p {
+    font-size: 14px;
+  }
+  .container .contact .inputs {
+    padding: 0 10px;
+  }
+  .container .popup .popup-content p {
+    font-size: 14px;
+  }
+  .container .popup .popup-content button {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  .container footer .content .top p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    gap: 80px;
+  }
+  .container .header-hero-con header .content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+  }
+  .container .header-hero-con header .content .logo img {
+    width: 100px;
+  }
+  .container .header-hero-con header .content .navigation {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+  }
+  .container .header-hero-con header .content .navigation a {
+    font-size: 14px;
+  }
+  .container .header-hero-con header .content .navigation.active {
+    display: flex;
+  }
+  .container .header-hero-con .hero-block {
+    gap: 30px;
+    padding: 20px;
+    background-size: cover;
+    height: auto;
+  }
+  .container .header-hero-con .hero-block .text {
+    gap: 20px;
+  }
+  .container .header-hero-con .hero-block .text h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .container .header-hero-con .hero-block .text p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .container .header-hero-con .hero-block .text button {
+    padding: 12px 24px;
+    font-size: 14px;
+    align-self: center;
+  }
+  .container .about-us-block .text {
+    gap: 20px;
+    padding: 0 15px;
+  }
+  .container .about-us-block .text h2 {
+    font-size: 24px;
+  }
+  .container .about-us-block .text p {
+    font-size: 14px;
+  }
+  .container .advantages-block .top-text {
+    padding: 0 15px;
+  }
+  .container .advantages-block .top-text h2 {
+    font-size: 24px;
+  }
+  .container .advantages-block .top-text p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .container .advantages-block .advantages {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .container .advantages-block .advantages .line {
+    display: none;
+  }
+  .container .advantages-block .advantages .advantage .text h3 {
+    font-size: 20px;
+  }
+  .container .advantages-block .advantages .advantage .text p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .container .advantages-block .advantages .advantage img {
+    width: 80px;
+    height: 80px;
+  }
+  .container .contact {
+    padding: 0 15px;
+  }
+  .container .contact .title h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .container .contact .inputs {
+    width: 100%;
+    gap: 16px;
+  }
+  .container .contact .inputs input,
+  .container .contact .inputs textarea {
+    font-size: 14px;
+    padding: 14px;
+  }
+  .container .contact .inputs textarea {
+    height: 120px;
+  }
+  .container .contact .btn-checkmark {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .container .contact .btn-checkmark button {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+  .container .contact .btn-checkmark .lol {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container .contact .btn-checkmark .lol p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .container .our-partners {
+    gap: 20px;
+  }
+  .container .our-partners h2 {
+    font-size: 24px;
+  }
+  .container .our-partners .photos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .container .our-partners .photos img {
+    max-width: 200px;
+    width: 100%;
+  }
+  .container footer .content {
+    padding: 20px;
+    gap: 20px;
+  }
+  .container footer .content .top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  .container footer .content .top p {
+    font-size: 16px;
+  }
+  .container footer .content .top .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container footer .content .top .navigation a {
+    font-size: 14px;
+  }
+  .container footer .content .bottom p {
+    font-size: 12px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукция</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/production.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="header-con">
+        <header>
+            <div class="content">
+                <div class="logo">
+                    <img src="./assets/_ 1.svg" alt="">
+                </div>
+                <div class="navigation">
+                    <a href="index.html">Главная</a>
+                    <a href="news.html">Новости</a>
+                    <a href="dialers.html">Диллеры</a>
+                    <a href="assortment.html">Ассортимент</a>
+                    <a href="">Продукция</a>
+                    <a href="company-projects.html">Проекты Компании</a>
+                    <a href="">Контакты</a>
+                    <a href="documents.html">Документы</a>
+                </div>
+                <div class="burger-menu" id="burger">
+                    <img src="./assets/icons8-hamburger-menu 1.svg" alt="">
+                </div>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Главная</a>
+            <a href="news.html">Новости</a>
+            <a href="dialers.html">Диллеры</a>
+            <a href="assortment.html">Ассортимент</a>
+            <a href="production.html">Продукция</a>
+            <a href="company-projects.html">Проекты Компании</a>
+            <a href="">Контакты</a>
+            <a href="documents.html">Документы</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="production">
+            <h2>Продукция компании ROBOLA</h2>
+            <div class="cards">
+                <div class="first-row">
+                    <div class="card">
+                        <img src="assets/photo.jpg" alt="">
+                        <p><span>Глушители, СВОГ</span><br>
+                            Глушители и компоненты выхлопных систем для LADA, Chevrolet, Daewoo, Renault | ООО "Робола"</p>
+                        <button class="open-modal" data-id="1">Подробнее</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/_(2).jpg" alt="">
+                        <p><span>Механическая обработка</span><br>
+                            Высокоточная обработка на станках DMG MORI с ЧПУ</p>
+                        <button class="open-modal" data-id="2">Подробнее</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/_(1).jpg" alt="">
+                        <p><span>Обработка труб</span><br>
+                            Профессиональная обработка труб на высокоточном оборудовании</p>
+                        <button class="open-modal" data-id="3">Подробнее</button>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="card">
+                        <img src="assets/_.jpg" alt="">
+                        <p><span>Резка металла</span><br>
+                            Линия продольной и поперечной резки CIDAN для обработки тонколистового металла</p>
+                        <button class="open-modal" data-id="4">Подробнее</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/_(3).jpg" alt="">
+                        <p><span>Роботизированная сварка</span><br>
+                            Автоматизированная дуговая сварка для стабильного качества продукции</p>
+                        <button class="open-modal" data-id="5">Подробнее</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/photo(1).jpg" alt="">
+                        <p><span>Штамповка</span><br>
+                            Производственные мощности: прессовое оборудование для металлообработки</p>
+                        <button class="open-modal" data-id="6">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="title">
+                <h2>Всегда рады ответить на Ваши вопросы</h2>
+            </div>
+            <div class="inputs">
+                <input type="text" placeholder="Фамилия, имя и отчество*" id="input">
+                <input type="text" placeholder="Телефон" id="input" pattern="^(\+7|8)?[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
+                required type="tel" name="phone">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <div class="btn-checkmark">
+                <button id="btn">Отправить данные</button>
+                <div class="lol">
+                    <input type="checkbox" id="consent" style="display: none;">
+                    <div class="checkmark" id="checkmark">
+                        <img src="./assets/Vector.svg" alt="" id="mark">
+                    </div>
+                    <p>Согласен на обработку данных</p>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <p>Ваши данные успешно отправлены</p>
+                <button id="closePopup">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" data-id="1">
+        <div class="modal-content">
+          <span class="close"><img src="assets/system-uicons_cross.svg" alt=""></span>
+          <img src="assets/photo-modal.png" alt="" class="photo">
+          <div class="text">
+            <h3>Глушители, СВОГ</h3>
+            <p> 
+                Компания "Робола" производит качественные компоненты выхлопных систем для автомобилей LADA, Chevrolet, Daewoo и Renault. В ассортименте: основные и дополнительные глушители (включая версии для ГБО), приемные трубы и каталитические нейтрализаторы, соответствующие нормам токсичности Евро-2 и Евро-3. <br> <br>
+                <span> Основные характеристики:</span> <br> <br>
+                - Материалы: углеродистая, алюминизированная и оцинкованная сталь <br>
+                - Совместимость: полное соответствие заводским креплениям (OEM-аналоги) <br>
+                - Экологические стандарты: соответствие нормам Евро-2 и Евро-3 <br>
+                - Применение: замена изношенных элементов, ремонт после повреждений, адаптация под ГБО<br>
+                 
+                 <br><span>Технические параметры:</span> <br> <br>
+                - Толщина металла: 0,8-2,0 мм <br>
+                - Температурная стойкость: до +700°C (алюминизированные модели) <br>
+                - Гарантия: 12 месяцев <br>
+                - Крепежные элементы: штатные монтажные точки <br> <br>
+                 
+                 <span>Преимущества продукции:</span> <br> <br>
+                - Долговечность: усиленная конструкция с защитным покрытием <br>
+                - Качество: многоступенчатый контроль производства <br>
+                - Доступность: прямые поставки от производителя <br>
+                - Ассортимент: широкий выбор типоразмеров
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="modal" data-id="2">
+        <div class="modal-content">
+          <span class="close"><img src="assets/system-uicons_cross.svg" alt=""></span>
+          <img src="assets/_(2)-modal.png" alt="" class="photo">
+          <div class="text">
+            <h3>Механическая обработка</h3>
+            <p>
+                <span>Технологические возможности производства:</span> <br> <br>
+                - Вертикальный обрабатывающий центр DMG MORI серии NVX <br>
+                - Система ЧПУ последнего поколения<br>
+                - Автоматическая система смены инструмента<br>
+                - Точность позиционирования: ±0,005 мм <br>
+                - Максимальная частота вращения шпинделя: 12 000 об/мин <br>
+                - Быстрая смена инструмента (менее 5 секунд) благодаря двойному захвату <br>
+                - Автоматизированная подача заготовок <br>
+
+                 <br><span>Производственные характеристики:</span> <br> <br>
+                - Обработка различных материалов:<br>
+                - Конструкционные стали<br>
+                - Цветные металлы<br>
+                - Легированные сплавы<br>
+                - Возможность выполнения сложных операций: <br>
+                - Фрезерные работы 5-осевой обработки <br>
+                - Точение с высокой точностью<br>
+                - Сверление и расточка<br> <br>
+                
+                 <span>Преимущества для клиентов:</span> <br> <br>
+                - Для промышленных предприятий: <br>
+                - Стабильность размеров в серийном производстве <br>
+                - Сокращение времени обработки на 25-30% <br>
+                - Возможность изготовления сложных деталей за одну установку <br>
+                - Для конструкторских бюро: <br>
+                - Реализация сложных геометрических форм <br>
+                - Высокая повторяемость параметров    
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="modal" data-id="3">
+        <div class="modal-content">
+          <span class="close"><img src="assets/system-uicons_cross.svg" alt=""></span>
+          <img src="assets/_(1)-modal.png" alt="" class="photo">
+          <div class="text">
+            <h3>Обработка труб</h3>
+            <p>
+                <span>Используемое оборудование:</span> <br> <br>
+                - Трубогибочные станки LANG с ЧПУ:<br>
+                - Диапазон обработки труб: от 10 до 60 мм<br>
+                - Максимальная толщина стенки: 3 мм<br>
+                - Тип управления: числовое программное управление
+                  Допуск точности гиба: ±0,5°<br>
+                - Автоматические линии резки REIKA:<br>
+                - Максимальный диаметр обрабатываемых труб: 51 мм<br>
+                - Функция автоматического снятия фаски<br>
+                - Толщина стенки: до 3 мм <br>
+                - Система позиционирования с лазерным контролем <br>
+
+                 <br><span>Технологические возможности:</span> <br> <br>
+                - Гибка труб по сложным пространственным траекториям<br>
+                - Точная резка под любым углом (от 45° до 90°)<br>
+                - Автоматическое снятие внутренней и внешней фаски<br>
+                - Обработка различных материалов:<br>
+                - Углеродистые стали<br>
+                - Нержавеющие стали<br>
+                - Цветные металлы<br> <br>  
+                
+                 <span>Преимущества для заказчиков:</span> <br> <br>
+                - Для промышленных предприятий: <br>
+                - Высокая повторяемость параметров в серийном производстве<br>
+                - Снижение брака до 0,5%<br>
+                - Возможность обработки сложных профилей<br>
+                - Для конструкторских бюро: <br>
+                - Точное соответствие техническим требованиям <br>
+                - Короткие сроки выполнения заказов    
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="modal" data-id="4">
+        <div class="modal-content">
+          <span class="close"><img src="assets/system-uicons_cross.svg" alt=""></span>
+          <img src="assets/_-modal.png" alt="" class="photo">
+          <div class="text">
+            <h3>Резка металла</h3>
+            <p>
+                <span>Технические характеристики оборудования:</span> <br> <br>
+                - Толщина обрабатываемого металла: 0,5-1,5 мм<br>
+                - Максимальная ширина рулона: 1250 мм<br>
+                - Точность резки: ±0,1 мм <br>
+                - Тип резки: продольная и поперечная<br> <br>
+
+                <span>Основные возможности:</span>
+                - Продольная резка: <br>
+                - Одновременная нарезка до 6 полос<br>
+                - Максимальная длина реза: 2500 мм <br>
+                - Угловая резка под 45° и 90°<br>             
+
+                 <br><span>Обрабатываемые материалы:</span> <br> <br>
+                - Оцинкованная сталь<br>
+                - Нержавеющая сталь<br>
+                - Алюминиевые сплавы<br>
+                - Гальванизированная сталь<br> <br>  
+                
+                 <span>Контроль качества:</span> <br> <br>
+                - Встроенная система лазерного контроля размеров<br>
+                - Автоматический контроль геометрии реза<br>
+                - Регулярная проверка заточки режущего инструмента<br>
+                - Статистический анализ точности обработки<br> <br>
+
+                <span>Дополнительные опции:</span>  <br> <br>
+                - Маркировка готовой продукции <br>
+                - Укладка готовых листов в пачки <br>
+                - Автоматическая упаковка <br>
+                - Система складирования
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="modal" data-id="5">
+        <div class="modal-content">
+          <span class="close"><img src="assets/system-uicons_cross.svg" alt=""></span>
+          <img src="assets/_(3)-modal.png" alt="" class="photo">
+          <div class="text">
+            <h3>Роботизированная сварка</h3>
+            <p>
+                <span>Технология процесса:</span> <br> <br>
+                - Полностью автоматизированная дуговая сварка с ЧПУ-управлением<br>
+                - Использование современных сварочных аппаратов (MIG/MAG, TIG)<br>
+                - Точное поддержание параметров: сила тока, напряжение, скорость подачи проволоки<br> <br>
+
+                <span>Преимущества автоматической сварки:</span>
+                - Высокая повторяемость – идентичное качество каждого шва<br>
+                - Минимизация человеческого фактора – исключение брака из-за ошибок оператора<br>
+                - Экономия материалов – оптимальный расход сварочной проволоки и газа<br>
+                - Производительность – скорость сварки в 2-3 раза выше ручного метода<br>             
+
+                 <br><span>Контроль качества сварных соединений:</span> <br> <br>
+                - Визуальный и инструментальный контроль<br>
+                - Ультразвуковая дефектоскопия<br>
+                - Испытания на прочность (разрушающие и неразрушающие методы)<br> <br>  
+                
+                 <span>Применение в производстве:</span> <br> <br>
+                - Сварка корпусных деталей<br>
+                - Изготовление металлоконструкций<br>
+                - Производство трубных элементов<br>
+                - Соединение ответственных узлов
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="modal" data-id="6">
+        <div class="modal-content">
+          <span class="close"><img src="assets/system-uicons_cross.svg" alt=""></span>
+          <img src="assets/photo(1)-modal.png" alt="" class="photo">
+          <div class="text">
+            <h3>Штамповка</h3>
+            <p>
+                <span>Технические характеристики:</span> <br> <br>
+                - Диапазон усилия прессов: 16–250 тонн<br>
+                - Типы прессов: механические, гидравлические<br>
+                - Точность обработки: ±0,1 мм<br>
+                - Макс. размер заготовки: до 1000×600 мм<br> <br>
+
+                <span>Обрабатываемые материалы:</span>
+                - Углеродистые и легированные стали (до 4 мм)<br>
+                - Алюминиевые сплавы (до 6 мм)<br>
+                - Нержавеющая сталь (до 3 мм)<br>            
+
+                 <br><span>Технологические возможности::</span> <br> <br>
+                - Серийное производство деталей сложной формы<br>
+                - Изготовление крепежных элементов, кронштейнов, корпусных деталей<br>
+                - Точечная и контурная гибка под углом 30°–180°<br>
+                - Минимальный радиус гиба: от 0,5t (толщины материала)<br> 
+                - Чистота кромки реза (класс 2 по ГОСТ)<br> <br>  
+                
+                 <span>Преимущества для заказчиков:</span> <br> <br>
+                - Гибкость производства: от единичных образцов до крупных серий (до 50 000 шт./мес)<br>
+                - Скорость обработки: до 120 ходов/мин (для малых прессов)<br>
+                - Статистический анализ параметров<br> <br>
+
+                <span>Примеры изделий:</span>  <br> <br>
+                - Автокомпоненты (крепления, скобы, фланцы)<br>
+                - Элементы мебельной фурнитуры <br>
+                - Детали электротехнических корпусов
+            </p>
+          </div>
+        </div>
+    </div>
+    <footer>
+        <div class="content">
+            <div class="top">
+                <img src="./assets/_ 1.svg" alt="">
+                <p>8 (8482) 75-93-81 <br>manager@robola.ru</p>
+                <div class="navigation">
+                    <a href="index.html">Главная</a>
+                    <a href="news.html">Новости</a>
+                    <a href="dialers.html">Диллеры</a>
+                    <a href="assortment.html">Ассортимент</a>
+                    <a href="">Продукция</a>
+                    <a href="company-projects.html">Проекты Компании</a>
+                    <a href="">Контакты</a>
+                    <a href="documents.html">Документы</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>445000, Россия, Самарская область, Ставропольский район, с.п. Тимофеевка, село Русская Борковка, ул. Северная 10Е</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/burger.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
